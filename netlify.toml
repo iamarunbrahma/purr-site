@@ -1,0 +1,25 @@
+# Netlify config for the Purr landing page.
+# Plain static site - no build step, no framework.
+# Connect this repo in the Netlify UI; these settings take precedence over
+# anything you select there, so the deploy stays reproducible.
+
+[build]
+  publish    = "."
+  command    = ""
+
+# Hash-free filenames here, so we cap caching at one hour for HTML/CSS/JS.
+# That lets a one-line copy fix go live within an hour without busting URLs.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options          = "DENY"
+    X-Content-Type-Options   = "nosniff"
+    Referrer-Policy          = "strict-origin-when-cross-origin"
+    Permissions-Policy       = "interest-cohort=()"
+    Cache-Control            = "public, max-age=3600"
+
+# Icons / images don't change between releases - cache them aggressively.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

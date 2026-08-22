@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBE9E3">
+  <meta name="description" content="Local voice-to-text dictation for macOS. 100% on-device, MIT-licensed, free forever. Hold a key, speak, your words type into any text field.">
+
+  <title>Purr - Local voice-to-text for macOS</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/purr-icon-64.png">
+  <link rel="apple-touch-icon" href="assets/purr-icon-256.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Purr - Local voice-to-text for macOS">
+  <meta property="og:description" content="Hold a key. Speak. Your words type into any text field. 100% on-device, MIT-licensed.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/purr-icon-256.png">
+</head>
+<body>
+
+  <!-- Sticky pill navigation, centred. -->
+  <header class="nav-wrap">
+    <nav class="nav-pill" aria-label="Primary">
+      <a class="nav-brand" href="/">
+        <img src="assets/purr_glyph_claycoral.png" width="30" height="30" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
+        Get the app
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">macOS 14+ · Apple Silicon · Free</p>
+        <h1 class="hero-title">
+          Hold a key. Speak.<br>
+          <span class="accent">Your words type themselves.</span>
+        </h1>
+        <p class="hero-sub">
+          Local voice-to-text dictation for macOS Apple Silicon. A free,
+          MIT-licensed alternative to paid commercial dictation apps, with no
+          telemetry and no cloud round-trips.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+            </svg>
+            Download for Mac
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-glow"></div>
+          <div class="waveset l"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
+          <img src="assets/purr_app_icon_1024.png" alt="" width="168" height="168">
+          <div class="waveset r"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section">
+      <div class="container">
+        <p class="section-eyebrow">How it works</p>
+        <h2 class="section-title">Three steps. No menus. No waiting.</h2>
+        <p class="section-sub">
+          The app sits in your menu bar. Trigger it from any text field.
+          Slack, Notes, Mail, Messages, anywhere.
+        </p>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-num">1</span>
+            <h3>Hold the hotkey</h3>
+            <p>
+              Right Option by default. Switch it to another built-in preset:
+              a bare modifier, a combo like ⌃⌥ Space, or a function key.
+            </p>
+          </article>
+          <article class="step">
+            <span class="step-num">2</span>
+            <h3>Speak naturally</h3>
+            <p>
+              Transcription runs entirely on the Apple Neural Engine,
+              on-device. Zero cloud round-trips, zero telemetry, zero waiting.
+            </p>
+          </article>
+          <article class="step">
+            <span class="step-num">3</span>
+            <h3>Release</h3>
+            <p>
+              Your transcript types straight into whichever app has focus,
+              word-by-word as you speak if you turn on Smart Typing.
+            </p>
+          </article>
+        </div>
+
+        <div class="demo" id="demo" aria-label="Animated demo: dictating into a text field">
+          <div class="demo-stage">
+            <div class="demo-window">
+              <div class="demo-bar" aria-hidden="true">
+                <span class="demo-dot r"></span>
+                <span class="demo-dot y"></span>
+                <span class="demo-dot g"></span>
+                <span class="demo-app">Notes</span>
+              </div>
+              <div class="demo-doc">
+                <p class="demo-text" id="demoText">Let&rsquo;s ship the new onboarding flow this week.</p>
+              </div>
+              <div class="demo-said" id="demoSaid" aria-hidden="true"></div>
+              <div class="demo-hud" id="demoHud" aria-hidden="true">
+                <span class="demo-hud-ic" id="demoHudIc"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Zm6-3a6 6 0 0 1-5 5.91V20h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3.09A6 6 0 0 1 6 11a1 1 0 1 1 2 0 4 4 0 0 0 8 0 1 1 0 1 1 2 0Z"/></svg></span>
+                <span class="demo-hud-lbl" id="demoHudLbl">Listening</span>
+                <span class="demo-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-cap">
+            <span class="demo-key" id="demoKey"><kbd>⌥</kbd></span>
+            <p class="demo-cap-txt">
+              <strong id="demoCapTitle">Smart typing</strong>
+              <span id="demoCapSub">Words type into the focused app as you speak.</span>
+            </p>
+          </div>
+
+          <p class="demo-also">
+            Also: two engines (Parakeet&nbsp;v2 + WhisperKit) &middot; custom dictionary &middot; everything on-device.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container container-narrow">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 class="section-title">Before you download.</h2>
+
+        <div class="faq">
+          <details>
+            <summary>Does my audio leave my Mac?</summary>
+            <p>
+              No. Recording, transcription, and post-processing all happen
+              on-device (transcription runs on the Apple Neural Engine). Zero
+              telemetry, and zero network calls after the initial model
+              download.
+            </p>
+          </details>
+
+          <details>
+            <summary>Which mode is lowest-latency?</summary>
+            <p>
+              Parakeet (the default) with Smart Typing on, so words appear as
+              you speak instead of on key release. Whisper can&rsquo;t match it
+              because it&rsquo;s non-streaming.
+            </p>
+          </details>
+
+          <details>
+            <summary>What languages can I dictate in?</summary>
+            <p>
+              English with the default Parakeet engine. For other languages,
+              switch to WhisperKit in Settings &rsaquo; Engine. It
+              transcribes ~100 languages (auto-detected or pinned) and can
+              optionally translate them to English.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does meeting mode record the other people on my call?</summary>
+            <p>
+              Yes. It captures your mic and your Mac&rsquo;s system audio
+              together, so remote participants are transcribed too, still
+              entirely on-device. System-audio capture needs macOS&nbsp;14.2+;
+              older systems record the mic only.
+            </p>
+          </details>
+
+          <details>
+            <summary>The mic icon isn&rsquo;t visible in my menu bar.</summary>
+            <p>
+              On notched MacBooks the icon hides behind the notch when the menu
+              bar is crowded. Hold Command and drag to reorder, quit a few menu
+              bar apps, or use
+              <a href="https://github.com/jordanbaird/Ice" target="_blank" rel="noopener">Ice</a>
+              / Bartender to manage overflow.
+            </p>
+          </details>
+
+          <details>
+            <summary>How big is the model download?</summary>
+            <p>
+              Parakeet TDT v2 is ~450&nbsp;MB, fetched automatically on first
+              launch. Whisper models range from ~140&nbsp;MB (Tiny) to
+              ~616&nbsp;MB (Large V3 Turbo) if you switch engines.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does it work without internet?</summary>
+            <p>
+              Yes, after the first model download. Everything runs on-device.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I change the hotkey?</summary>
+            <p>
+              Yes. Pick from a few built-in presets per feature in
+              Settings (e.g. Right Option, F5, or ⌃⌥ Space for dictation).
+              There&rsquo;s no custom recorder yet, so keys outside the presets
+              can&rsquo;t be assigned.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I use it in any app?</summary>
+            <p>
+              Any standard text field. Voice editing works in
+              Accessibility-supported fields (most native macOS apps); other
+              apps fall back to paste injection.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I update Purr?</summary>
+            <p>
+              Open the menu bar &rsaquo; About Purr and it checks GitHub
+              Releases automatically (or click &ldquo;Check for Updates&rdquo;).
+              A new version downloads, verifies its checksum, and relaunches in
+              place.
+            </p>
+          </details>
+
+          <details>
+            <summary>Why was I asked to grant permissions again after an update?</summary>
+            <p>
+              Either the bundle ID changed (e.g. you swapped in a different
+              fork) or you revoked a permission in System Settings. Re-grant
+              from the menu bar &rsaquo; Onboarding Setup.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / why this exists -->
+    <section id="about" class="section section-about">
+      <div class="container container-narrow">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">Why I built this.</h2>
+
+        <div class="about-prose">
+          <p>
+            I type for a living. Most days my hands are on the keyboard for nine,
+            ten, twelve hours. A few months ago my wrists started aching partway
+            through the afternoon, just enough that I started closing the laptop
+            after dinner instead of finishing one more email.
+          </p>
+
+          <p>
+            I tried the usual voice to text apps. A couple of them work well. But
+            they all wanted a monthly subscription, and they all sent my voice to
+            a server before it came back as text. I&rsquo;ve written enough
+            software to know that, in practice, your voice sits on somebody
+            else&rsquo;s disk for as long as they feel like keeping it.
+          </p>
+
+          <p>
+            So I built Purr myself, over a few weekends that turned into a few
+            months. It does the same job as those other apps, except everything
+            happens right there on your laptop instead of on someone else&rsquo;s
+            server. It took a lot longer than I expected. But three months in,
+            it&rsquo;s the first thing I open every morning, ahead of Slack and
+            email.
+          </p>
+
+          <p>
+            It&rsquo;s free and open source, and it never touches the internet
+            after you install it. It doesn&rsquo;t ask for a subscription or an
+            account, and there&rsquo;s no telemetry phoning home in the
+            background. The code is on GitHub if you want to see how it works or
+            change something you don&rsquo;t like.
+          </p>
+
+          <p class="about-sign">
+            I built this for myself. I&rsquo;m putting it out because if your
+            wrists ache too, you might need it more than you think.
+          </p>
+        </div>
+
+        <!-- QR + download callout -->
+        <div class="qr-card" id="get">
+          <div class="qr-card-art">
+            <img src="assets/qr.svg" alt="QR code that downloads Purr.dmg" width="200" height="200">
+          </div>
+          <div class="qr-card-body">
+            <p class="qr-eyebrow">Get the app</p>
+            <h3>Scan the code, or click the button.</h3>
+            <p class="qr-sub">
+              The QR opens the latest release and starts the download
+              automatically. macOS 14+ on Apple Silicon.
+            </p>
+            <div class="qr-card-ctas">
+              <a class="btn btn-primary btn-download" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                </svg>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-brand" href="/">
+        <img src="assets/purr_glyph_claycoral.png" width="26" height="26" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <p class="footer-line">
+        © <span id="year"></span> Arun Brahma · MIT License ·
+        <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-legal">
+        <a href="/privacy.html">Privacy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/terms.html">Terms</a>
+        <span aria-hidden="true">·</span>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <!-- Cloudflare Web Analytics — privacy-first, cookieless, no consent banner needed.
+       Token for purr.arunbrahma.com. Manage at dash.cloudflare.com → Web Analytics. -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df377985526f415dbb581a27ecad3ad7"}'></script>
+</body>
+</html>
