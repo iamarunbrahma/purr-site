@@ -15,12 +15,12 @@
 ## Pages
 
 - [Home](https://purr.arunbrahma.com/): how it works, FAQ and why it exists
-- [Comparison](https://purr.arunbrahma.com/compare.html): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources
+- [Comparison](https://purr.arunbrahma.com/compare): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources
 - [Download](https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg): the latest release (DMG)
-- [Contact](https://purr.arunbrahma.com/contact.html)
+- [Contact](https://purr.arunbrahma.com/contact)
 
 ## Optional
 
-- [Privacy policy](https://purr.arunbrahma.com/privacy.html)
-- [Terms](https://purr.arunbrahma.com/terms.html)
-- [Disclaimer](https://purr.arunbrahma.com/disclaimer.html)
+- [Privacy policy](https://purr.arunbrahma.com/privacy)
+- [Terms](https://purr.arunbrahma.com/terms)
+- [Disclaimer](https://purr.arunbrahma.com/disclaimer)
