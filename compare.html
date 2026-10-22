@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBE9E3">
+  <meta name="description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price. Checked on 22 October 2026.">
+
+  <title>Purr vs Wispr Flow, Superwhisper and VoiceInk</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/purr-icon-64.png">
+  <link rel="apple-touch-icon" href="/assets/purr-icon-256.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="canonical" href="https://purr.arunbrahma.com/compare.html">
+  <meta property="og:site_name" content="Purr">
+  <meta property="og:title" content="Purr vs Wispr Flow, Superwhisper and VoiceInk">
+  <meta property="og:description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price. Checked on 22 October 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://purr.arunbrahma.com/compare.html">
+  <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <nav class="nav-pill" aria-label="Primary">
+      <a class="nav-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="40" height="30" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#how">How it works</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
+        Get the app
+      </a>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <article class="container compare-wrap">
+      <p class="section-eyebrow">Compare</p>
+      <h1>Purr vs Wispr Flow, Superwhisper and VoiceInk</h1>
+      <p class="legal-meta">Checked against each app&rsquo;s own site, docs and GitHub on 22 October 2026. Numbers in brackets link to the source.</p>
+
+      <p>All four let you hold a key, talk, and have the words typed into the app you are
+      using. Wispr Flow does the transcription in the cloud. Superwhisper and VoiceInk can
+      run on your Mac or in the cloud, with paid plans for the full feature set. Purr runs
+      only on your Mac and is free and open source.</p>
+
+      <p class="scroll-hint">Swipe the table sideways to see all four apps.</p>
+      <div class="compare-scroll">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="us">Purr</th>
+              <th scope="col"><a href="https://wisprflow.ai" target="_blank" rel="noopener">Wispr Flow</a></th>
+              <th scope="col"><a href="https://superwhisper.com" target="_blank" rel="noopener">Superwhisper</a></th>
+              <th scope="col"><a href="https://tryvoiceink.com" target="_blank" rel="noopener">VoiceInk</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">What it is</th>
+              <td class="us">Free push-to-talk dictation that runs entirely on your Mac</td>
+              <td>AI dictation that transcribes in the cloud, plus a meeting notetaker <sup><a href="#w7">[6]</a></sup></td>
+              <td>Dictation with AI modes, using local or cloud models <sup><a href="#s1">[7]</a></sup></td>
+              <td>A paid Mac dictation app whose source code is on GitHub <sup><a href="#v8">[20]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Where speech becomes text</th>
+              <td class="us">On your Mac, always</td>
+              <td>In the cloud, always <sup><a href="#w2">[2]</a></sup></td>
+              <td>On your Mac with local models on the free plan; Pro adds cloud models <sup><a href="#s2">[8]</a></sup></td>
+              <td>On your Mac, or in the cloud with your own API keys <sup><a href="#v2">[15]</a> <a href="#v4">[17]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Works offline</th>
+              <td class="us">Yes, once the speech model has downloaded</td>
+              <td>No: an offline device cannot start dictation <sup><a href="#w5">[4]</a></sup></td>
+              <td>Yes, with local models <sup><a href="#s3">[9]</a></sup></td>
+              <td>Yes, with local models <sup><a href="#v11">[22]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Account</th>
+              <td class="us">None</td>
+              <td>Yes: sign in with Apple, Google, Microsoft, SSO or email <sup><a href="#w6">[5]</a></sup></td>
+              <td>No sign-in to start; Pro uses an emailed license key <sup><a href="#s4">[10]</a> <a href="#s7">[13]</a></sup></td>
+              <td>No sign-in; a license key after the 7-day trial <sup><a href="#v7">[19]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Languages</th>
+              <td class="us">English with the default Parakeet engine; about 100 with WhisperKit, which can also translate to English</td>
+              <td>100+ <sup><a href="#w1">[1]</a></sup></td>
+              <td>100+; translating to English is a Pro feature <sup><a href="#s1">[7]</a></sup></td>
+              <td>Many; its docs give no total <sup><a href="#v3">[16]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">When the text appears</th>
+              <td class="us">As you speak, with Smart Typing (Parakeet engine)</td>
+              <td>After you release the key <sup><a href="#w5">[4]</a></sup></td>
+              <td>As you speak in Realtime mode, a Pro feature <sup><a href="#s5">[11]</a></sup></td>
+              <td>A live preview in its recorder; the final text is pasted after <sup><a href="#v5">[18]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">AI rewriting</th>
+              <td class="us">None. Voice commands, voice editing ("change X to Y"), a custom dictionary and filler-word trimming</td>
+              <td>Removes filler words and self-corrections, formats lists, and matches the style of each app <sup><a href="#w7">[6]</a></sup></td>
+              <td>AI modes with your own prompts, using cloud or local language models <sup><a href="#s2">[8]</a> <a href="#s3">[9]</a></sup></td>
+              <td>AI enhancement through a cloud provider or a local model <sup><a href="#v4">[17]</a> <a href="#v11">[22]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Meetings</th>
+              <td class="us">Free: records your mic and Mac audio, labels speakers, and writes a summary on your Mac</td>
+              <td>Notetaker on Mac and Windows; limited on the free plan <sup><a href="#w1">[1]</a></sup></td>
+              <td>Records mic and Mac audio with speaker labels and summaries; a Pro feature <sup><a href="#s6">[12]</a></sup></td>
+              <td>Not covered in its docs <sup><a href="#v10">[21]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Open source</th>
+              <td class="us">Yes, MIT</td>
+              <td>No public source code</td>
+              <td>No public source code</td>
+              <td>Yes, GPL-3.0 <sup><a href="#v8">[20]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Runs on</th>
+              <td class="us">macOS 14 or later, Apple silicon only</td>
+              <td>Mac (Apple silicon and Intel), Windows, iPhone and Android <sup><a href="#w3">[3]</a></sup></td>
+              <td>Mac, Windows, iPhone and Android; Intel Macs work best with cloud models <sup><a href="#s1">[7]</a> <a href="#s4">[10]</a></sup></td>
+              <td>Mac, macOS 15 or later; the iPhone app needs its own license <sup><a href="#v2">[15]</a> <a href="#v12">[23]</a></sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Price</th>
+              <td class="us">Free</td>
+              <td>Free up to 2,000 words a week on desktop; Pro is $15 a month, or $12 a month billed yearly <sup><a href="#w1">[1]</a></sup></td>
+              <td>Free with local models; Pro is $8.49 a month, $84.99 a year or $249.99 once <sup><a href="#s2">[8]</a></sup></td>
+              <td>$25 once for one Mac, $39 for two, $49 for three <sup><a href="#v1">[14]</a></sup></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Where the others do better</h2>
+      <p><strong>Wispr Flow</strong> works on Windows, iPhone, Android and Intel Macs, and its AI
+      cleans up filler words, self-corrections and lists for you <sup><a href="#w3">[3]</a> <a href="#w7">[6]</a></sup>. It also has
+      team plans.</p>
+      <p><strong>Superwhisper</strong> runs on every major platform, has AI modes with your own
+      prompts and a wider choice of models, and on Pro transcribes audio and video files <sup><a href="#s1">[7]</a> <a href="#s2">[8]</a></sup>.</p>
+      <p><strong>VoiceInk</strong> is open source too, offers more models and AI enhancement, and
+      has an iPhone app <sup><a href="#v8">[20]</a> <a href="#v4">[17]</a> <a href="#v12">[23]</a></sup>.</p>
+
+      <h2>Where Purr is different</h2>
+      <p>Purr is free with no word limit, no trial and no account, and the code is MIT-licensed.
+      With Smart Typing, words land in your app while you are still talking. Meeting mode,
+      with your Mac&rsquo;s audio, speaker labels and summaries, is free and stays on your Mac.
+      It runs on macOS 14 or later. It needs an Apple silicon Mac, and it does not rewrite your
+      words with AI. If you need Windows, an iPhone app or AI cleanup, one of the apps above
+      will suit you better.</p>
+      <div class="hero-ctas compare-ctas">
+        <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">Download Purr free</a>
+        <a class="btn btn-ghost btn-lg" href="/#how">See how it works</a>
+      </div>
+
+      <h2>Sources</h2>
+      <ol class="sources">
+          <li id="w1"><a href="https://wisprflow.ai/pricing" target="_blank" rel="noopener">Wispr Flow pricing</a></li>
+          <li id="w2"><a href="https://wisprflow.ai/privacy" target="_blank" rel="noopener">Wispr Flow privacy</a></li>
+          <li id="w3"><a href="https://docs.wisprflow.ai/articles/1036674442-supported-devices-and-system-requirements" target="_blank" rel="noopener">Wispr Flow docs: supported devices</a></li>
+          <li id="w5"><a href="https://docs.wisprflow.ai/articles/6409258247-starting-your-first-dictation" target="_blank" rel="noopener">Wispr Flow docs: your first dictation</a></li>
+          <li id="w6"><a href="https://docs.wisprflow.ai/articles/1753832329-login-issues-with-wispr-flow" target="_blank" rel="noopener">Wispr Flow docs: signing in</a></li>
+          <li id="w7"><a href="https://wisprflow.ai" target="_blank" rel="noopener">Wispr Flow website</a></li>
+          <li id="s1"><a href="https://superwhisper.com" target="_blank" rel="noopener">Superwhisper website</a></li>
+          <li id="s2"><a href="https://superwhisper.com/docs/billing/plans" target="_blank" rel="noopener">Superwhisper docs: plans</a></li>
+          <li id="s3"><a href="https://superwhisper.com/models" target="_blank" rel="noopener">Superwhisper models</a></li>
+          <li id="s4"><a href="https://superwhisper.com/docs/get-started/quickstart" target="_blank" rel="noopener">Superwhisper docs: quickstart</a></li>
+          <li id="s5"><a href="https://superwhisper.com/docs/common-issues/realtime" target="_blank" rel="noopener">Superwhisper docs: realtime</a></li>
+          <li id="s6"><a href="https://superwhisper.com/docs/meetings/overview" target="_blank" rel="noopener">Superwhisper docs: meetings</a></li>
+          <li id="s7"><a href="https://superwhisper.com/docs/billing/activate" target="_blank" rel="noopener">Superwhisper docs: activating Pro</a></li>
+          <li id="v1"><a href="https://tryvoiceink.com/pricing" target="_blank" rel="noopener">VoiceInk pricing</a></li>
+          <li id="v2"><a href="https://tryvoiceink.com/docs/installation" target="_blank" rel="noopener">VoiceInk docs: installation</a></li>
+          <li id="v3"><a href="https://tryvoiceink.com/docs/local-models" target="_blank" rel="noopener">VoiceInk docs: local models</a></li>
+          <li id="v4"><a href="https://tryvoiceink.com/docs/cloud-providers" target="_blank" rel="noopener">VoiceInk docs: cloud providers</a></li>
+          <li id="v5"><a href="https://tryvoiceink.com/docs/realtime-transcription" target="_blank" rel="noopener">VoiceInk docs: realtime transcription</a></li>
+          <li id="v7"><a href="https://tryvoiceink.com/docs/license-management" target="_blank" rel="noopener">VoiceInk docs: licenses</a></li>
+          <li id="v8"><a href="https://github.com/Beingpax/VoiceInk" target="_blank" rel="noopener">VoiceInk on GitHub</a></li>
+          <li id="v10"><a href="https://tryvoiceink.com/docs/audio-input" target="_blank" rel="noopener">VoiceInk docs: audio input</a></li>
+          <li id="v11"><a href="https://tryvoiceink.com/docs/privacy-and-data" target="_blank" rel="noopener">VoiceInk docs: privacy and data</a></li>
+          <li id="v12"><a href="https://tryvoiceink.com/docs/ios-macos-license-confusion" target="_blank" rel="noopener">VoiceInk docs: iPhone and Mac licenses</a></li>
+      </ol>
+      <p>Spotted something out of date? <a href="/contact.html">Tell me</a> and I will fix it.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="35" height="26" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <p class="footer-line">
+        © <span id="year"></span> Arun Brahma · MIT License ·
+        <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-legal">
+        <a href="/compare.html">Compare</a>
+        <span aria-hidden="true">·</span>
+        <a href="/contact.html">Contact</a>
+        <span aria-hidden="true">·</span>
+        <a href="/privacy.html">Privacy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/terms.html">Terms</a>
+        <span aria-hidden="true">·</span>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+
+  <!-- Cloudflare Web Analytics — privacy-first, cookieless, no consent banner needed.
+       Token for purr.arunbrahma.com. Manage at dash.cloudflare.com → Web Analytics. -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df377985526f415dbb581a27ecad3ad7"}'></script>
+  <script defer src="/analytics.js" data-site="purr"></script>
+</body>
+</html>

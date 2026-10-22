@@ -1,0 +1,14 @@
+# Search engines and AI assistants are all welcome. The AI crawlers are named so it is
+# clear they are allowed; they follow the same rules as everyone else.
+User-agent: *
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+Sitemap: https://purr.arunbrahma.com/sitemap.xml

@@ -10,12 +10,64 @@
 
   <link rel="icon" type="image/png" sizes="64x64" href="assets/purr-icon-64.png">
   <link rel="apple-touch-icon" href="assets/purr-icon-256.png">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Quicksand_wght_.woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://purr.arunbrahma.com/">
 
+  <meta property="og:site_name" content="Purr">
   <meta property="og:title" content="Purr - Local voice-to-text for macOS">
   <meta property="og:description" content="Hold a key. Speak. Your words type into any text field. 100% on-device, MIT-licensed.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/purr-icon-256.png">
+  <meta property="og:url" content="https://purr.arunbrahma.com/">
+  <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Purr - hold a key, speak, your words type themselves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Purr - Local voice-to-text for macOS">
+  <meta name="twitter:description" content="Hold a key. Speak. Your words type into any text field. Free, MIT-licensed, and it runs on your Mac.">
+  <meta name="twitter:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+  <meta name="twitter:image:alt" content="Purr - hold a key, speak, your words type themselves.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://arunbrahma.com/#organization",
+        "name": "Arun Brahma",
+        "url": "https://arunbrahma.com/",
+        "email": "contact@arunbrahma.com",
+        "founder": { "@type": "Person", "name": "Arun Brahma", "url": "https://arunbrahma.com/" },
+        "sameAs": ["https://github.com/iamarunbrahma", "https://www.linkedin.com/in/iamarunbrahma"]
+      },
+      {
+        "@type": ["Product", "SoftwareApplication"],
+        "@id": "https://purr.arunbrahma.com/#product",
+        "name": "Purr",
+        "description": "Free, open-source (MIT) push-to-talk dictation for macOS on Apple silicon. Hold a key, speak, and your words type into the app you are using. Speech recognition runs on your Mac, with Parakeet for English and WhisperKit for about 100 languages, plus a meeting mode that records your mic and system audio.",
+        "url": "https://purr.arunbrahma.com/",
+        "image": "https://purr.arunbrahma.com/assets/og-card.png",
+        "sameAs": ["https://github.com/iamarunbrahma/purr"],
+        "brand": { "@id": "https://arunbrahma.com/#organization" },
+        "author": { "@id": "https://arunbrahma.com/#organization" },
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "macOS 14 or later, Apple silicon",
+        "downloadUrl": "https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg",
+        "license": "https://opensource.org/license/mit",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://purr.arunbrahma.com/"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -23,7 +75,7 @@
   <header class="nav-wrap">
     <nav class="nav-pill" aria-label="Primary">
       <a class="nav-brand" href="/">
-        <img src="assets/purr_glyph_claycoral.png" width="30" height="30" alt="" aria-hidden="true">
+        <img src="/assets/purr-glyph-80.webp" width="40" height="30" alt="" aria-hidden="true">
         <span>purr</span>
       </a>
       <ul class="nav-links">
@@ -31,7 +83,7 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
         </svg>
@@ -57,13 +109,13 @@
         </p>
 
         <div class="hero-ctas">
-          <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+          <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
             </svg>
             Download for Mac
           </a>
-          <a class="btn btn-ghost btn-lg" href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">
+          <a class="btn btn-ghost btn-lg" href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener" data-track="github_clicked">
             View on GitHub
           </a>
         </div>
@@ -71,7 +123,7 @@
         <div class="hero-art" aria-hidden="true">
           <div class="hero-glow"></div>
           <div class="waveset l"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
-          <img src="assets/purr_app_icon_1024.png" alt="" width="168" height="168">
+          <img src="assets/purr-icon-168.webp" srcset="assets/purr-icon-168.webp 1x, assets/purr-icon-336.webp 2x" alt="" width="168" height="168" fetchpriority="high">
           <div class="waveset r"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
         </div>
       </div>
@@ -81,7 +133,7 @@
     <section id="how" class="section">
       <div class="container">
         <p class="section-eyebrow">How it works</p>
-        <h2 class="section-title">Three steps. No menus. No waiting.</h2>
+        <h2 class="section-title">Three steps, in any app.</h2>
         <p class="section-sub">
           The app sits in your menu bar. Trigger it from any text field.
           Slack, Notes, Mail, Messages, anywhere.
@@ -100,8 +152,8 @@
             <span class="step-num">2</span>
             <h3>Speak naturally</h3>
             <p>
-              Transcription runs entirely on the Apple Neural Engine,
-              on-device. Zero cloud round-trips, zero telemetry, zero waiting.
+              Transcription runs on your Mac&rsquo;s Apple Neural Engine.
+              Your voice is never sent to a server.
             </p>
           </article>
           <article class="step">
@@ -161,9 +213,10 @@
             <summary>Does my audio leave my Mac?</summary>
             <p>
               No. Recording, transcription, and post-processing all happen
-              on-device (transcription runs on the Apple Neural Engine). Zero
-              telemetry, and zero network calls after the initial model
-              download.
+              on-device (transcription runs on the Apple Neural Engine). There
+              is no telemetry. Purr goes online only to download speech
+              models, and to check GitHub for a new version when you open
+              About Purr.
             </p>
           </details>
 
@@ -211,8 +264,8 @@
             <summary>How big is the model download?</summary>
             <p>
               Parakeet TDT v2 is ~450&nbsp;MB, fetched automatically on first
-              launch. Whisper models range from ~140&nbsp;MB (Tiny) to
-              ~616&nbsp;MB (Large V3 Turbo) if you switch engines.
+              launch. Whisper models range from ~140&nbsp;MB to ~950&nbsp;MB
+              if you switch engines.
             </p>
           </details>
 
@@ -220,6 +273,19 @@
             <summary>Does it work without internet?</summary>
             <p>
               Yes, after the first model download. Everything runs on-device.
+            </p>
+          </details>
+
+          <details>
+            <summary>How is it different from Wispr Flow, Superwhisper or VoiceInk?</summary>
+            <p>
+              Wispr Flow transcribes in the cloud and has apps for Windows,
+              iPhone and Android. Superwhisper and VoiceInk can run locally
+              too, and add AI rewriting and more model choices, but their
+              full versions are paid. Purr is free with no word limit, trial
+              or account, MIT-licensed, and types as you speak. The
+              <a href="/compare.html">side-by-side comparison</a> has the
+              details and sources.
             </p>
           </details>
 
@@ -296,8 +362,8 @@
           </p>
 
           <p>
-            It&rsquo;s free and open source, and it never touches the internet
-            after you install it. It doesn&rsquo;t ask for a subscription or an
+            It&rsquo;s free and open source, and your voice never leaves your
+            Mac. It doesn&rsquo;t ask for a subscription or an
             account, and there&rsquo;s no telemetry phoning home in the
             background. The code is on GitHub if you want to see how it works or
             change something you don&rsquo;t like.
@@ -322,7 +388,7 @@
               automatically. macOS 14+ on Apple Silicon.
             </p>
             <div class="qr-card-ctas">
-              <a class="btn btn-primary btn-download" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg">
+              <a class="btn btn-primary btn-download" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
                 </svg>
@@ -339,7 +405,7 @@
   <footer class="footer">
     <div class="container">
       <a class="footer-brand" href="/">
-        <img src="assets/purr_glyph_claycoral.png" width="26" height="26" alt="" aria-hidden="true">
+        <img src="/assets/purr-glyph-80.webp" width="35" height="26" alt="" aria-hidden="true">
         <span>purr</span>
       </a>
       <p class="footer-line">
@@ -347,6 +413,10 @@
         <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>
       </p>
       <p class="footer-legal">
+        <a href="/compare.html">Compare</a>
+        <span aria-hidden="true">·</span>
+        <a href="/contact.html">Contact</a>
+        <span aria-hidden="true">·</span>
         <a href="/privacy.html">Privacy</a>
         <span aria-hidden="true">·</span>
         <a href="/terms.html">Terms</a>
@@ -361,5 +431,6 @@
   <!-- Cloudflare Web Analytics — privacy-first, cookieless, no consent banner needed.
        Token for purr.arunbrahma.com. Manage at dash.cloudflare.com → Web Analytics. -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df377985526f415dbb581a27ecad3ad7"}'></script>
+  <script defer src="/analytics.js" data-site="purr"></script>
 </body>
 </html>

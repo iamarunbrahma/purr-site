@@ -1,0 +1,26 @@
+# Purr
+
+> Purr is free, open-source (MIT) push-to-talk dictation for macOS on Apple silicon. Hold a key, speak, and your words type into whichever app has focus. Speech recognition runs on your Mac; your voice is never sent to a server.
+
+- Default hotkey: hold Right Option. Each feature's hotkey can be switched between a few built-in presets.
+- Engines: Parakeet TDT v2 (default, English) and WhisperKit (about 100 languages, auto-detected or pinned, with optional translation to English).
+- Smart Typing: with Parakeet, words appear in the app as you speak.
+- Meeting mode: records your mic and your Mac's system audio (macOS 14.2+), labels speakers, saves transcripts as Markdown, and can write a summary on your Mac (Apple's on-device model on macOS 26+, or Gemma 3 4B on older systems).
+- Voice editing, in-speech voice commands ("comma", "new paragraph", "scratch that"), a custom dictionary and filler-word trimming. No AI rewriting.
+- Privacy: no telemetry, no account. Purr goes online only to download speech models (Parakeet is about 450 MB) and to check GitHub for a new version when you open About Purr.
+- Requirements: macOS 14 (Sonoma) or later on Apple silicon. Intel Macs are not supported.
+- Price: free. Source code: https://github.com/iamarunbrahma/purr
+- Made by Arun Brahma, an independent developer. Contact: contact@arunbrahma.com
+
+## Pages
+
+- [Home](https://purr.arunbrahma.com/): how it works, FAQ and why it exists
+- [Comparison](https://purr.arunbrahma.com/compare.html): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources
+- [Download](https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg): the latest release (DMG)
+- [Contact](https://purr.arunbrahma.com/contact.html)
+
+## Optional
+
+- [Privacy policy](https://purr.arunbrahma.com/privacy.html)
+- [Terms](https://purr.arunbrahma.com/terms.html)
+- [Disclaimer](https://purr.arunbrahma.com/disclaimer.html)

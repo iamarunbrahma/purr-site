@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBE9E3">
+  <meta name="description" content="Questions, bug reports or ideas for Purr, the free on-device dictation app for macOS. Send a message and Arun replies by email.">
+
+  <title>Contact - Purr</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/purr-icon-64.png">
+  <link rel="apple-touch-icon" href="/assets/purr-icon-256.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="canonical" href="https://purr.arunbrahma.com/contact.html">
+  <meta property="og:site_name" content="Purr">
+  <meta property="og:title" content="Contact - Purr">
+  <meta property="og:description" content="Questions, bug reports or ideas for Purr, the free on-device dictation app for macOS. Send a message and Arun replies by email.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://purr.arunbrahma.com/contact.html">
+  <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://purr.arunbrahma.com/assets/og-card.png">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <nav class="nav-pill" aria-label="Primary">
+      <a class="nav-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="40" height="30" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#how">How it works</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
+        Get the app
+      </a>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <article class="container container-narrow">
+      <p class="section-eyebrow">Contact</p>
+      <h1>Get in touch.</h1>
+      <p class="legal-meta">I read every message and reply by email, usually within a day or two.</p>
+      <p>Found a bug or have an idea? <a href="https://github.com/iamarunbrahma/purr/issues" target="_blank" rel="noopener">GitHub issues</a>
+      are best for those, so others can follow along. For anything else, send a message here
+      or write to <a href="mailto:contact@arunbrahma.com?subject=Purr">contact@arunbrahma.com</a>.</p>
+
+      <form class="contact-form" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+        <input type="hidden" name="form-name" value="contact">
+        <label><span>Name <span class="optional">(optional)</span></span>
+          <input name="name" type="text" autocomplete="name" maxlength="100">
+        </label>
+        <label>Email
+          <input name="email" type="email" autocomplete="email" required maxlength="200">
+        </label>
+        <label>Message
+          <textarea name="message" required maxlength="5000"></textarea>
+        </label>
+        <label class="hp" aria-hidden="true">Company
+          <input name="company" type="text" tabindex="-1" autocomplete="off">
+        </label>
+        <button class="btn btn-primary btn-lg" type="submit">Send message</button>
+        <p class="contact-msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="legal-meta">Your message is stored by Netlify, which hosts this site, and emailed to me. It is used only to reply. See the <a href="/privacy.html">privacy policy</a>.</p>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var form = document.getElementById('contact');
+      var msg = form.querySelector('.contact-msg');
+      var button = form.querySelector('button');
+      function show(text, ok) { msg.textContent = text; msg.className = 'contact-msg ' + (ok ? 'ok' : 'err'); }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var f = form.elements;
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) return show('Please enter a valid email address.');
+        if (!f.message.value.trim()) return show('Please write a message.');
+        button.disabled = true;
+        show('Sending...', true);
+        fetch('/', {
+          method: 'POST',
+          headers: { 'content-type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        }).then(function (r) {
+          if (!r.ok) throw new Error();
+          form.reset();
+          show('Thanks, your message is on its way. I will reply by email.', true);
+          if (window.posthog && posthog.capture) posthog.capture('contact_submitted');
+        }).catch(function () {
+          show('Could not send. Please check your connection or email contact@arunbrahma.com.');
+        }).finally(function () {
+          button.disabled = false;
+        });
+      });
+    })();
+  </script>
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="35" height="26" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <p class="footer-line">
+        © <span id="year"></span> Arun Brahma · MIT License ·
+        <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-legal">
+        <a href="/compare.html">Compare</a>
+        <span aria-hidden="true">·</span>
+        <a href="/contact.html">Contact</a>
+        <span aria-hidden="true">·</span>
+        <a href="/privacy.html">Privacy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/terms.html">Terms</a>
+        <span aria-hidden="true">·</span>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+
+  <!-- Cloudflare Web Analytics — privacy-first, cookieless, no consent banner needed.
+       Token for purr.arunbrahma.com. Manage at dash.cloudflare.com → Web Analytics. -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df377985526f415dbb581a27ecad3ad7"}'></script>
+  <script defer src="/analytics.js" data-site="purr"></script>
+</body>
+</html>
