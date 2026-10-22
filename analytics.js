@@ -20,7 +20,9 @@
       cookieless_mode: 'always',
       person_profiles: 'never',
       disable_session_recording: true,
-      enable_heatmaps: true
+      enable_heatmaps: true,
+      // PageSpeed and Lighthouse runs still load and run this script, but send no events.
+      custom_blocked_useragents: ['Chrome-Lighthouse']
     });
     posthog.register({ site: site });
 
