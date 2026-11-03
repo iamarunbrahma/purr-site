@@ -47,52 +47,67 @@
     <article class="container container-narrow">
       <p class="section-eyebrow">Privacy</p>
       <h1>What we collect, where it goes.</h1>
-      <p class="legal-meta">Last updated: 22 October 2026</p>
+      <p class="legal-meta">Last updated: 3 November 2026</p>
 
       <h2>Short version</h2>
       <p>
-        Purr runs entirely on your Mac. The app collects nothing &mdash; no
-        servers, no analytics, no account system, and no way to see what you say
-        into the app. There is nothing for us to leak because there is nothing
-        for us to store. The website uses privacy-friendly, cookieless analytics
+        Purr runs entirely on your Mac. The app collects nothing: no servers,
+        no analytics, no account system, and no way to see what you say into
+        the app. There is nothing for us to leak because there is nothing for
+        us to store. The website uses privacy-friendly, cookieless analytics
         that count visits without identifying you; details below.
       </p>
 
       <h2>What the app does on your machine</h2>
       <p>
         When you hold the hotkey, the app records audio through your microphone,
-        runs speech recognition on the Apple Neural Engine, and types the result
-        into whichever app has focus. The audio is held in memory only for as
-        long as it takes to transcribe. We never write recordings to disk and we
-        never send them anywhere.
+        runs speech recognition on your Mac, and types the result into whichever
+        app has focus. Dictation audio is held in memory only for as long as it
+        takes to transcribe. It is never written to disk and never sent
+        anywhere.
       </p>
       <p>
-        Meeting mode saves the transcript (text, not audio) to the folder you
-        pick during setup, by default
-        <code>~/Library/Application Support/Purr/Purr Meetings</code>. Those
-        files live on your machine. We do not see them.
+        Meeting mode saves each transcript as a Markdown file, with its summary
+        if you asked for one, in the folder set in Settings &rsaquo; Meetings, by
+        default <code>~/Library/Application Support/Purr/Purr Meetings</code>.
+        It saves the meeting&rsquo;s audio as an <code>.m4a</code> file next to
+        it only if you turn on Keep audio, or if transcribing fails, so the
+        meeting isn&rsquo;t lost. Those files live on your machine. We do not
+        see them.
+      </p>
+      <p>
+        Summaries and Voice Edit run on your Mac too, with Apple Intelligence
+        (part of macOS&nbsp;26) or the Gemma&nbsp;4&nbsp;E2B model. Neither sends
+        your text anywhere.
       </p>
 
       <h2>The only network requests Purr makes</h2>
       <ul>
         <li>
-          <strong>Speech model downloads.</strong> On first use the Parakeet TDT v2
-          model (~450&nbsp;MB) downloads from Hugging Face. If you switch engines,
-          Whisper variants (about 140&nbsp;MB to 950&nbsp;MB) download from the same place.
+          <strong>Speech model downloads.</strong> During setup the Parakeet TDT v2
+          model (about 450&nbsp;MB) downloads from Hugging Face. If you switch
+          engines, Whisper models (about 140&nbsp;MB to 950&nbsp;MB) download from
+          the same place.
         </li>
         <li>
-          <strong>Optional features.</strong> Turning on Smart Typing downloads the
-          Parakeet EOU model (~440&nbsp;MB), and turning on Meeting Mode downloads a
-          speaker-separation model. Both download once from Hugging Face.
+          <strong>Optional features.</strong> Each downloads its model once from
+          Hugging Face, the first time you use it: Smart Typing the Parakeet EOU
+          model (about 220&nbsp;MB), meetings a speaker-separation model (about
+          20&nbsp;MB), meetings in other languages Parakeet Ultra (about
+          630&nbsp;MB), and your vocabulary&rsquo;s names and terms Parakeet CTC
+          110M (about 100&nbsp;MB).
         </li>
         <li>
-          <strong>Optional summarizer.</strong> If you turn on meeting summarization,
-          the Gemma&nbsp;3 4B model (~2.5&nbsp;GB) downloads once from Hugging Face.
+          <strong>Summaries and Voice Edit.</strong> If you use them without Apple
+          Intelligence, or choose Gemma, Gemma&nbsp;4&nbsp;E2B (about 3.35&nbsp;GB)
+          downloads once from Hugging Face.
         </li>
         <li>
-          <strong>Update check.</strong> When you open About Purr, or click Check for
-          Updates, Purr asks GitHub for the latest release. If you choose to update,
-          the new version downloads from GitHub and its checksum is verified.
+          <strong>Update check.</strong> If you let it, Purr checks GitHub for a
+          new version once a day, and whenever you click Check for Updates. The
+          check fetches a small feed file; the request names Purr&rsquo;s version
+          and nothing about you or your Mac. If you install an update, it downloads from GitHub, and Purr
+          checks that it is signed by its developer before replacing the app.
         </li>
       </ul>
       <p>
@@ -103,12 +118,12 @@
 
       <h2>What this website collects</h2>
       <p>
-        Aggregate, anonymous traffic counts &mdash; nothing that identifies you.
+        Aggregate, anonymous traffic counts, nothing that identifies you.
         We use
         <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener">Cloudflare Web Analytics</a>,
         which is cookieless and does not store your IP address, fingerprint your
         device, or build any cross-site profile. It records aggregate page views,
-        referrers, and visitor country &mdash; enough to know which pages people
+        referrers, and visitor country: enough to know which pages people
         find useful, and no more. No cookies, no consent banner, no third-party
         ad embeds. That data is processed under
         <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare&rsquo;s privacy policy</a>.
@@ -122,6 +137,13 @@
         made. To tell visits apart without a cookie, PostHog keeps only a one-way hash
         of your IP address and browser details mixed with a value that changes every
         day; the IP address itself is discarded. We do not build profiles of visitors.
+      </p>
+      <p>
+        The video demo on the home page is a still image until you click play.
+        Only then does it load YouTube&rsquo;s privacy-enhanced player
+        (youtube-nocookie.com), and from that point
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s privacy policy</a>
+        applies to the video.
       </p>
       <p>
         If you use the <a href="/contact.html">contact form</a>, your name, email

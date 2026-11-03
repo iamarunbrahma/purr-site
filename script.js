@@ -1,4 +1,5 @@
-// Footer year + close other open FAQs when one is clicked.
+// Footer year, one open FAQ at a time, the click-to-play video and the
+// live demo.
 // Tiny on purpose: this is a static landing page, nothing more.
 
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -13,10 +14,27 @@ faqDetails.forEach(d => {
   });
 });
 
+// The video demo is a still image linking to YouTube until it's clicked, so
+// the page makes no request to YouTube before then. A click swaps in the
+// privacy-enhanced (youtube-nocookie) player; without JS the link still works.
+document.querySelectorAll(".video-poster[data-yt]").forEach(poster => {
+  poster.addEventListener("click", e => {
+    e.preventDefault();
+    const player = document.createElement("iframe");
+    player.src = "https://www.youtube-nocookie.com/embed/" + poster.dataset.yt +
+      "?autoplay=1&rel=0&playsinline=1";
+    player.title = "Purr video demo";
+    player.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    player.allowFullscreen = true;
+    player.referrerPolicy = "strict-origin-when-cross-origin";
+    poster.replaceWith(player);
+  });
+});
+
 /* -----------------------------------------------------------------
-   Live dictation demo (How it works). Mirrors the app's flow: hold
+   Live demo (More than dictation). Mirrors the app's flow: hold
    the key, speak, words type into the focused field; then voice
-   commands and voice editing. Loops only while in view; leaves the
+   commands and Voice Edit. Loops only while in view; leaves the
    static HTML in place under reduced-motion. No dependencies.
    ----------------------------------------------------------------- */
 (function () {
@@ -66,7 +84,7 @@ faqDetails.forEach(d => {
   const keyUp = () => keyEl.classList.remove("down");
   const tap = async (label) => { keyDown(label); await sleep(280); keyUp(); };
 
-  // Smart typing: the pill mirrors the live transcript.
+  // Smart Typing: the pill mirrors the live transcript.
   const hudListenLive = () => {
     hudIc.innerHTML = MIC;
     livePreview = true;
@@ -150,7 +168,7 @@ faqDetails.forEach(d => {
   //    in once on release. The pill shows Listening, then Transcribing.
   async function sceneDictate() {
     clearStage();
-    setCap("Dictate", "Hold the key, speak, release. Your transcript pastes in.");
+    setCap("Dictate", "Hold the key, speak, release. Your words type in.");
     await sleep(500);
     keyDown("⌥");
     hudListen();
@@ -165,10 +183,10 @@ faqDetails.forEach(d => {
     await sleep(1100);
   }
 
-  // 2. Smart typing: words stream into the field live, mirrored in the pill.
+  // 2. Smart Typing: words stream into the field live, mirrored in the pill.
   async function sceneSmart() {
     clearStage();
-    setCap("Smart typing", "Words type into the focused app live as you speak.");
+    setCap("Smart Typing", "Words type into the app while you speak.");
     await sleep(500);
     keyDown("⌥");
     hudListenLive();
@@ -205,10 +223,10 @@ faqDetails.forEach(d => {
     await sleep(1000);
   }
 
-  // 4. Voice editing: select text, hold the edit hotkey, speak the change.
+  // 4. Voice Edit: select text, hold the edit hotkey, speak the change.
   async function sceneEdit() {
     clearStage();
-    setCap("Voice editing", "Select text, hold ⌃⌥E, and speak the change.");
+    setCap("Voice Edit", "Select text, hold ⌃⌥E, and say the change.");
     text.innerHTML = "Let’s meet <span class=\"sel\" id=\"demoSel\">this week</span>.";
     await sleep(750);
     keyDown("⌃⌥E");
