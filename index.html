@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FBE9E3">
-  <meta name="description" content="Local voice-to-text dictation for macOS. 100% on-device, MIT-licensed, free forever. Hold a key, speak, your words type into any text field.">
+  <meta name="description" content="Dictation, meeting notes and voice editing that run entirely on your Mac. Hold a key, speak, and your words appear in any app. Free, MIT-licensed and works offline.">
 
   <title>Purr - Local voice-to-text for macOS</title>
 
@@ -16,7 +16,7 @@
 
   <meta property="og:site_name" content="Purr">
   <meta property="og:title" content="Purr - Local voice-to-text for macOS">
-  <meta property="og:description" content="Hold a key. Speak. Your words type into any text field. 100% on-device, MIT-licensed.">
+  <meta property="og:description" content="Hold a key, speak, and your words appear in any app. Dictation, meeting notes and voice editing, all on your Mac. Free and MIT-licensed.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://purr.arunbrahma.com/">
   <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card.png">
@@ -25,7 +25,7 @@
   <meta property="og:image:alt" content="Purr - hold a key, speak, your words type themselves.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Purr - Local voice-to-text for macOS">
-  <meta name="twitter:description" content="Hold a key. Speak. Your words type into any text field. Free, MIT-licensed, and it runs on your Mac.">
+  <meta name="twitter:description" content="Hold a key, speak, and your words appear in any app. Dictation, meeting notes and voice editing, all on your Mac. Free and MIT-licensed.">
   <meta name="twitter:image" content="https://purr.arunbrahma.com/assets/og-card.png">
   <meta name="twitter:image:alt" content="Purr - hold a key, speak, your words type themselves.">
 
@@ -46,7 +46,7 @@
         "@type": ["Product", "SoftwareApplication"],
         "@id": "https://purr.arunbrahma.com/#product",
         "name": "Purr",
-        "description": "Free, open-source (MIT) push-to-talk dictation for macOS on Apple silicon. Hold a key, speak, and your words type into the app you are using. Speech recognition runs on your Mac, with Parakeet for English and WhisperKit for about 100 languages, plus a meeting mode that records your mic and system audio.",
+        "description": "Free, open-source (MIT) dictation, meeting notes and voice editing for macOS on Apple silicon. Hold a key, speak, and your words appear in the app you are using. Everything runs on your Mac: Parakeet for English and WhisperKit for about 100 languages, Smart Typing that types as you speak, meeting notes from your mic and system audio with speaker labels and summaries in 28 languages, and Voice Edit, which rewrites selected text from a spoken instruction.",
         "url": "https://purr.arunbrahma.com/",
         "image": "https://purr.arunbrahma.com/assets/og-card.png",
         "sameAs": ["https://github.com/iamarunbrahma/purr"],
@@ -97,15 +97,14 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">macOS 14+ · Apple Silicon · Free</p>
         <h1 class="hero-title">
           Hold a key. Speak.<br>
           <span class="accent">Your words type themselves.</span>
         </h1>
         <p class="hero-sub">
-          Local voice-to-text dictation for macOS Apple Silicon. A free,
-          MIT-licensed alternative to paid commercial dictation apps, with no
-          telemetry and no cloud round-trips.
+          Dictation, meeting notes and voice editing for Apple Silicon Macs.
+          Free and MIT-licensed. Works offline, no account, no cloud, no
+          telemetry.
         </p>
 
         <div class="hero-ctas">
@@ -133,10 +132,10 @@
     <section id="how" class="section">
       <div class="container">
         <p class="section-eyebrow">How it works</p>
-        <h2 class="section-title">Three steps, in any app.</h2>
+        <h2 class="section-title">Type anywhere when you speak, without using your fingers.</h2>
         <p class="section-sub">
-          The app sits in your menu bar. Trigger it from any text field.
-          Slack, Notes, Mail, Messages, anywhere.
+          Purr sits in your menu bar. Click into a text box anywhere on your
+          Mac, like Slack, Notes, Mail or Messages, then:
         </p>
 
         <div class="steps">
@@ -160,11 +159,40 @@
             <span class="step-num">3</span>
             <h3>Release</h3>
             <p>
-              Your transcript types straight into whichever app has focus,
-              word-by-word as you speak if you turn on Smart Typing.
+              Your words type into whichever app has focus. Turn on Smart
+              Typing and they appear while you&rsquo;re still talking.
             </p>
           </article>
         </div>
+
+        <div class="video" id="video">
+          <div class="video-frame">
+            <!-- A still until it's clicked: no request reaches YouTube before
+                 then. script.js swaps in the privacy-enhanced embed. -->
+            <a class="video-poster" href="https://youtu.be/f5YK0at-RSw" target="_blank" rel="noopener" data-yt="f5YK0at-RSw" data-track="video_played" aria-label="Play the Purr video demo, 57 seconds">
+              <img src="assets/demo-poster-960.webp" srcset="assets/demo-poster-960.webp 960w, assets/demo-poster-1920.webp 1920w" sizes="(max-width: 860px) 100vw, 820px" width="1920" height="1080" alt="Purr's Voice Edit bubble under a text window with one sentence selected" loading="lazy" decoding="async">
+              <span class="video-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="38" height="38" fill="currentColor"><path d="M6.6 5.14v13.72a1 1 0 0 0 1.52.85l10.9-6.86a1 1 0 0 0 0-1.7L8.12 4.29A1 1 0 0 0 6.6 5.14Z"/></svg>
+              </span>
+            </a>
+          </div>
+          <p class="video-cap">
+            Dictation, Smart Typing, a meeting and Voice Edit in under a minute.
+            Every line on screen is what Purr really typed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- More than dictation -->
+    <section id="features" class="section">
+      <div class="container">
+        <p class="section-eyebrow">More than dictation</p>
+        <h2 class="section-title">Meetings, edits and your own words.</h2>
+        <p class="section-sub">
+          Meetings and Voice Edit are off until you turn them on in Settings.
+          Like dictation, they run on your Mac.
+        </p>
 
         <div class="demo" id="demo" aria-label="Animated demo: dictating into a text field">
           <div class="demo-stage">
@@ -190,13 +218,13 @@
           <div class="demo-cap">
             <span class="demo-key" id="demoKey"><kbd>⌥</kbd></span>
             <p class="demo-cap-txt">
-              <strong id="demoCapTitle">Smart typing</strong>
-              <span id="demoCapSub">Words type into the focused app as you speak.</span>
+              <strong id="demoCapTitle">Dictate</strong>
+              <span id="demoCapSub">Hold the key, speak, release. Your words type in.</span>
             </p>
           </div>
 
           <p class="demo-also">
-            Also: two engines (Parakeet&nbsp;v2 + WhisperKit) &middot; custom dictionary &middot; everything on-device.
+            Also: names and terms Purr listens for &middot; fixes for words it keeps mishearing &middot; meetings in English and 27 more languages.
           </p>
         </div>
       </div>
@@ -212,45 +240,49 @@
           <details>
             <summary>Does my audio leave my Mac?</summary>
             <p>
-              No. Recording, transcription, and post-processing all happen
-              on-device (transcription runs on the Apple Neural Engine). There
-              is no telemetry. Purr goes online only to download speech
-              models, and to check GitHub for a new version when you open
-              About Purr.
+              No. Recording, transcription, summaries and Voice Edit all run on
+              your Mac, and there is no telemetry. Purr only goes online to
+              download models and, if you allow it, to check GitHub for
+              updates.
             </p>
           </details>
 
           <details>
-            <summary>Which mode is lowest-latency?</summary>
+            <summary>How fast is it?</summary>
             <p>
-              Parakeet (the default) with Smart Typing on, so words appear as
-              you speak instead of on key release. Whisper can&rsquo;t match it
-              because it&rsquo;s non-streaming.
+              With Parakeet, the default, your words land about 0.2 seconds
+              after you let go of the key. With Smart Typing on, they appear
+              while you&rsquo;re still talking. Whisper is slower, because it
+              starts only once you let go.
             </p>
           </details>
 
           <details>
             <summary>What languages can I dictate in?</summary>
             <p>
-              English with the default Parakeet engine. For other languages,
-              switch to WhisperKit in Settings &rsaquo; Engine. It
-              transcribes ~100 languages (auto-detected or pinned) and can
-              optionally translate them to English.
+              English with Parakeet, the default. For other languages, switch
+              to Whisper in Settings &rsaquo; Engine. It covers about 100
+              languages and can translate them into English. Pick the one you
+              speak, since auto-detect can misread short clips. Smart Typing
+              is English only, and meetings work in English and 27 more
+              languages.
             </p>
           </details>
 
           <details>
             <summary>Does meeting mode record the other people on my call?</summary>
             <p>
-              Yes. It captures your mic and your Mac&rsquo;s system audio
-              together, so remote participants are transcribed too, still
-              entirely on-device. System-audio capture needs macOS&nbsp;14.2+;
-              older systems record the mic only.
+              Yes. It records your mic and your Mac&rsquo;s audio together, so
+              the other people on the call are transcribed too. That needs
+              macOS&nbsp;14.2 or later; on 14.0 and 14.1 only your mic is
+              recorded. When nothing plays through your Mac, like a meeting
+              around one table, Purr tells the voices apart and labels them
+              Speaker&nbsp;1, Speaker&nbsp;2 and so on.
             </p>
           </details>
 
           <details>
-            <summary>The mic icon isn&rsquo;t visible in my menu bar.</summary>
+            <summary>I can&rsquo;t see the icon in the menu bar.</summary>
             <p>
               On notched MacBooks the icon hides behind the notch when the menu
               bar is crowded. Hold Command and drag to reorder, quit a few menu
@@ -261,18 +293,23 @@
           </details>
 
           <details>
-            <summary>How big is the model download?</summary>
+            <summary>How big are the downloads?</summary>
             <p>
-              Parakeet TDT v2 is ~450&nbsp;MB, fetched automatically on first
-              launch. Whisper models range from ~140&nbsp;MB to ~950&nbsp;MB
-              if you switch engines.
+              Parakeet, the default, is about 450&nbsp;MB and downloads during
+              setup. The rest download only when you turn on what needs them:
+              Smart Typing adds about 220&nbsp;MB, meetings in other languages
+              about 630&nbsp;MB, and Gemma&nbsp;4&nbsp;E2B, for summaries and
+              Voice Edit, 3.35&nbsp;GB. Whisper models run from about
+              140&nbsp;MB to 950&nbsp;MB. Settings &rsaquo; Models lists each
+              one and can delete it.
             </p>
           </details>
 
           <details>
             <summary>Does it work without internet?</summary>
             <p>
-              Yes, after the first model download. Everything runs on-device.
+              Yes, once the models you use have downloaded. Everything runs on
+              your Mac.
             </p>
           </details>
 
@@ -281,49 +318,53 @@
             <p>
               Wispr Flow transcribes in the cloud and has apps for Windows,
               iPhone and Android. Superwhisper and VoiceInk can run locally
-              too, and add AI rewriting and more model choices, but their
-              full versions are paid. Purr is free with no word limit, trial
-              or account, MIT-licensed, and types as you speak. The
-              <a href="/compare.html">side-by-side comparison</a> has the
-              details and sources.
+              too, with AI modes and more model choices, but their full
+              versions are paid. Purr is free with no word limit, trial or
+              account, MIT-licensed, and types as you speak. When I played the
+              same recordings into each app, Purr put the text on screen
+              fastest. The <a href="/compare.html">side-by-side comparison</a>
+              has those results, the details and sources.
             </p>
           </details>
 
           <details>
             <summary>Can I change the hotkey?</summary>
             <p>
-              Yes. Pick from a few built-in presets per feature in
-              Settings (e.g. Right Option, F5, or ⌃⌥ Space for dictation).
-              There&rsquo;s no custom recorder yet, so keys outside the presets
-              can&rsquo;t be assigned.
+              Yes. Each mode has a few keys to pick from in Settings, like
+              Right Option, F5 or ⌃⌥&nbsp;Space for dictation, and dictation
+              can also start and stop with a tap. You can&rsquo;t record a key
+              of your own yet.
             </p>
           </details>
 
           <details>
             <summary>Can I use it in any app?</summary>
             <p>
-              Any standard text field. Voice editing works in
-              Accessibility-supported fields (most native macOS apps); other
-              apps fall back to paste injection.
+              Dictation works in any text field. Voice Edit reads your
+              selection through Accessibility, which most Mac apps support. A
+              few, like some web pages and Electron apps, don&rsquo;t share it,
+              so Voice Edit can&rsquo;t see what you selected there.
             </p>
           </details>
 
           <details>
             <summary>How do I update Purr?</summary>
             <p>
-              Open the menu bar &rsaquo; About Purr and it checks GitHub
-              Releases automatically (or click &ldquo;Check for Updates&rdquo;).
-              A new version downloads, verifies its checksum, and relaunches in
-              place.
+              The first time Purr starts after setup, it asks whether to check
+              for updates automatically. If you say yes, it checks GitHub once
+              a day. You can also click Check for Updates in the menu bar or in
+              About at any time. You see what changed before anything
+              installs, and Purr checks that each update is signed by its
+              developer before it replaces the app.
             </p>
           </details>
 
           <details>
-            <summary>Why was I asked to grant permissions again after an update?</summary>
+            <summary>Why does the menu say Permissions Needed?</summary>
             <p>
-              Either the bundle ID changed (e.g. you swapped in a different
-              fork) or you revoked a permission in System Settings. Re-grant
-              from the menu bar &rsaquo; Onboarding Setup.
+              A permission Purr needs is off, usually because it was switched
+              off in System Settings. Click Permissions Needed to see which one
+              and turn it back on. Updates keep your permissions.
             </p>
           </details>
         </div>

@@ -47,7 +47,7 @@
     <article class="container container-narrow">
       <p class="section-eyebrow">Terms</p>
       <h1>Plain English terms of use.</h1>
-      <p class="legal-meta">Last updated: 22 October 2026</p>
+      <p class="legal-meta">Last updated: 3 November 2026</p>
 
       <h2>The license</h2>
       <p>
@@ -80,7 +80,8 @@
 
       <h2>How you use it is on you</h2>
       <p>
-        The app records audio when you hold the hotkey. Recording other people
+        The app records audio while you hold the hotkey and for as long as a
+        meeting is recording. Recording other people
         without their knowledge or consent may be illegal in your jurisdiction.
         Some places require all-party consent. Some only require one. It is your
         responsibility to know your local law and to comply with it.
@@ -93,20 +94,25 @@
 
       <h2>Third-party models</h2>
       <p>
-        Purr downloads speech recognition models from Hugging Face on first
-        use. Those models carry their own licences:
+        Purr downloads its models from Hugging Face the first time a feature
+        needs them. Those models carry their own licences:
       </p>
       <ul>
         <li>Parakeet TDT v2 (NVIDIA / FluidAudio): CC-BY-4.0</li>
+        <li>Parakeet Ultra (moondream&rsquo;s post-training of NVIDIA&rsquo;s
+          Parakeet TDT v3, via FluidAudio), used for meetings in other
+          languages: CC-BY-4.0</li>
         <li>Parakeet EOU 120M (NVIDIA / FluidAudio), used for Smart Typing:
           <a href="https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/" target="_blank" rel="noopener">NVIDIA Open Model License</a>
         </li>
-        <li>Speaker separation model (FluidAudio), used for Meeting Mode:
+        <li>Parakeet CTC 110M (NVIDIA / FluidAudio), used for your
+          vocabulary&rsquo;s names and terms: CC-BY-4.0</li>
+        <li>Speaker separation model (FluidAudio), used for meetings:
           <a href="https://huggingface.co/FluidInference/speaker-diarization-coreml/blob/main/NOTICE.md" target="_blank" rel="noopener">licence notice</a>
         </li>
         <li>Whisper (OpenAI / WhisperKit): MIT</li>
-        <li>Gemma 3 4B (Google), used for the optional summarizer:
-          <a href="https://ai.google.dev/gemma/terms" target="_blank" rel="noopener">Gemma Terms of Use</a>
+        <li>Gemma 4 E2B (Google), used for summaries and Voice Edit:
+          <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache-2.0</a>
         </li>
       </ul>
       <p>

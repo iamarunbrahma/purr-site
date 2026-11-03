@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FBE9E3">
-  <meta name="description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price. Checked on 22 October 2026.">
+  <meta name="description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price.">
 
   <title>Purr vs Wispr Flow, Superwhisper and VoiceInk</title>
 
@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://purr.arunbrahma.com/compare">
   <meta property="og:site_name" content="Purr">
   <meta property="og:title" content="Purr vs Wispr Flow, Superwhisper and VoiceInk">
-  <meta property="og:description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price. Checked on 22 October 2026.">
+  <meta property="og:description" content="How Purr compares with Wispr Flow, Superwhisper and VoiceInk for dictation on a Mac: where speech is processed, account, offline use, languages, meetings, open source and price.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://purr.arunbrahma.com/compare">
   <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card.png">
@@ -47,7 +47,7 @@
     <article class="container compare-wrap">
       <p class="section-eyebrow">Compare</p>
       <h1>Purr vs Wispr Flow, Superwhisper and VoiceInk</h1>
-      <p class="legal-meta">Checked against each app&rsquo;s own site, docs and GitHub on 22 October 2026. Numbers in brackets link to the source.</p>
+      <p class="legal-meta">Checked against each app&rsquo;s own site, docs and GitHub. Numbers in brackets link to the source.</p>
 
       <p>All four let you hold a key, talk, and have the words typed into the app you are
       using. Wispr Flow does the transcription in the cloud. Superwhisper and VoiceInk can
@@ -69,7 +69,7 @@
           <tbody>
             <tr>
               <th scope="row">What it is</th>
-              <td class="us">Free push-to-talk dictation that runs entirely on your Mac</td>
+              <td class="us">Free dictation, meeting notes and voice editing that run entirely on your Mac</td>
               <td>AI dictation that transcribes in the cloud, plus a meeting notetaker <sup><a href="#w7">[6]</a></sup></td>
               <td>Dictation with AI modes, using local or cloud models <sup><a href="#s1">[7]</a></sup></td>
               <td>A paid Mac dictation app whose source code is on GitHub <sup><a href="#v8">[20]</a></sup></td>
@@ -83,7 +83,7 @@
             </tr>
             <tr>
               <th scope="row">Works offline</th>
-              <td class="us">Yes, once the speech model has downloaded</td>
+              <td class="us">Yes, once its models have downloaded</td>
               <td>No: an offline device cannot start dictation <sup><a href="#w5">[4]</a></sup></td>
               <td>Yes, with local models <sup><a href="#s3">[9]</a></sup></td>
               <td>Yes, with local models <sup><a href="#v11">[22]</a></sup></td>
@@ -97,7 +97,7 @@
             </tr>
             <tr>
               <th scope="row">Languages</th>
-              <td class="us">English with the default Parakeet engine; about 100 with WhisperKit, which can also translate to English</td>
+              <td class="us">English with the default Parakeet engine; about 100 with WhisperKit, which can also translate to English. Meetings in English and 27 more</td>
               <td>100+ <sup><a href="#w1">[1]</a></sup></td>
               <td>100+; translating to English is a Pro feature <sup><a href="#s1">[7]</a></sup></td>
               <td>Many; its docs give no total <sup><a href="#v3">[16]</a></sup></td>
@@ -111,14 +111,14 @@
             </tr>
             <tr>
               <th scope="row">AI rewriting</th>
-              <td class="us">None. Voice commands, voice editing ("change X to Y"), a custom dictionary and filler-word trimming</td>
+              <td class="us">Only when you ask: Voice Edit rewrites selected text from a spoken instruction, on your Mac with Apple Intelligence or Gemma 4 E2B. Dictation gets voice commands, your vocabulary and filler-word trimming</td>
               <td>Removes filler words and self-corrections, formats lists, and matches the style of each app <sup><a href="#w7">[6]</a></sup></td>
               <td>AI modes with your own prompts, using cloud or local language models <sup><a href="#s2">[8]</a> <a href="#s3">[9]</a></sup></td>
               <td>AI enhancement through a cloud provider or a local model <sup><a href="#v4">[17]</a> <a href="#v11">[22]</a></sup></td>
             </tr>
             <tr>
               <th scope="row">Meetings</th>
-              <td class="us">Free: records your mic and Mac audio, labels speakers, and writes a summary on your Mac</td>
+              <td class="us">Free: records your mic and Mac audio, labels speakers, and writes a summary on your Mac, in English and 27 more languages</td>
               <td>Notetaker on Mac and Windows; limited on the free plan <sup><a href="#w1">[1]</a></sup></td>
               <td>Records mic and Mac audio with speaker labels and summaries; a Pro feature <sup><a href="#s6">[12]</a></sup></td>
               <td>Not covered in its docs <sup><a href="#v10">[21]</a></sup></td>
@@ -148,10 +148,63 @@
         </table>
       </div>
 
+      <h2>Measured side by side</h2>
+      <p>I played the same recordings into Purr, Wispr Flow (free plan,
+      runs in the cloud) and Superwhisper (free plan, runs on the Mac) as each app&rsquo;s
+      microphone, in its dictation mode. VoiceInk wasn&rsquo;t part of this run. Lower
+      numbers are better for latency and word error rate (WER), and higher for names spelled
+      right.</p>
+
+      <div class="compare-scroll">
+        <table class="compare compare-measured">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="us">Purr</th>
+              <th scope="col">Wispr Flow</th>
+              <th scope="col">Superwhisper</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Latency (key release to text)</th>
+              <td class="us"><strong>0.22 s</strong></td>
+              <td>0.63 s</td>
+              <td>1.30 s</td>
+            </tr>
+            <tr>
+              <th scope="row">WER, everyday speech</th>
+              <td class="us">3.8%</td>
+              <td><strong>3.4%</strong></td>
+              <td>9.0%</td>
+            </tr>
+            <tr>
+              <th scope="row">WER, hard audio (noise, accents, quiet speech)</th>
+              <td class="us"><strong>4.0%</strong></td>
+              <td><strong>4.0%</strong></td>
+              <td>10.0%</td>
+            </tr>
+            <tr>
+              <th scope="row">WER, in non-English languages</th>
+              <td class="us">7.1%</td>
+              <td><strong>5.8%</strong></td>
+              <td>12.1%</td>
+            </tr>
+            <tr>
+              <th scope="row">Names and terms spelled right (same list in each app)</th>
+              <td class="us">72.6%</td>
+              <td><strong>93.5%</strong></td>
+              <td>51.6%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <h2>Where the others do better</h2>
       <p><strong>Wispr Flow</strong> works on Windows, iPhone, Android and Intel Macs, and its AI
       cleans up filler words, self-corrections and lists for you <sup><a href="#w3">[3]</a> <a href="#w7">[6]</a></sup>. It also has
-      team plans.</p>
+      team plans. In the test above it spelled far more names and terms right, and made a
+      few fewer errors on everyday speech and other languages.</p>
       <p><strong>Superwhisper</strong> runs on every major platform, has AI modes with your own
       prompts and a wider choice of models, and on Pro transcribes audio and video files <sup><a href="#s1">[7]</a> <a href="#s2">[8]</a></sup>.</p>
       <p><strong>VoiceInk</strong> is open source too, offers more models and AI enhancement, and
@@ -159,11 +212,12 @@
 
       <h2>Where Purr is different</h2>
       <p>Purr is free with no word limit, no trial and no account, and the code is MIT-licensed.
-      With Smart Typing, words land in your app while you are still talking. Meeting mode,
-      with your Mac&rsquo;s audio, speaker labels and summaries, is free and stays on your Mac.
-      It runs on macOS 14 or later. It needs an Apple silicon Mac, and it does not rewrite your
-      words with AI. If you need Windows, an iPhone app or AI cleanup, one of the apps above
-      will suit you better.</p>
+      It put text on screen fastest in the test above, and with Smart Typing, words land in
+      your app while you are still talking. Meeting mode, with your Mac&rsquo;s audio, speaker
+      labels and summaries, is free and stays on your Mac, and Voice Edit rewrites selected
+      text when you ask. It runs on macOS 14 or later and needs an Apple silicon Mac. It
+      doesn&rsquo;t clean up your dictation with AI on its own. If you need Windows, an iPhone
+      app or automatic AI cleanup, one of the apps above will suit you better.</p>
       <div class="hero-ctas compare-ctas">
         <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">Download Purr free</a>
         <a class="btn btn-ghost btn-lg" href="/#how">See how it works</a>

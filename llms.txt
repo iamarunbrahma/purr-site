@@ -1,21 +1,24 @@
 # Purr
 
-> Purr is free, open-source (MIT) push-to-talk dictation for macOS on Apple silicon. Hold a key, speak, and your words type into whichever app has focus. Speech recognition runs on your Mac; your voice is never sent to a server.
+> Purr is free, open-source (MIT) dictation, meeting notes and voice editing for macOS on Apple silicon. Hold a key, speak, and your words appear in whichever app has focus. Everything runs on your Mac: your voice is never sent to a server, and it works offline once its models have downloaded.
 
-- Default hotkey: hold Right Option. Each feature's hotkey can be switched between a few built-in presets.
+- Hotkeys: hold Right Option to dictate (or tap to start and stop), Control-Option-M for meetings, Control-Option-E for Voice Edit. Each has a few other keys to pick from in Settings.
 - Engines: Parakeet TDT v2 (default, English) and WhisperKit (about 100 languages, auto-detected or pinned, with optional translation to English).
-- Smart Typing: with Parakeet, words appear in the app as you speak.
-- Meeting mode: records your mic and your Mac's system audio (macOS 14.2+), labels speakers, saves transcripts as Markdown, and can write a summary on your Mac (Apple's on-device model on macOS 26+, or Gemma 3 4B on older systems).
-- Voice editing, in-speech voice commands ("comma", "new paragraph", "scratch that"), a custom dictionary and filler-word trimming. No AI rewriting.
-- Privacy: no telemetry, no account. Purr goes online only to download speech models (Parakeet is about 450 MB) and to check GitHub for a new version when you open About Purr.
+- Smart Typing: with Parakeet, words appear in the app while you are still talking (English only).
+- Meetings: records your mic and your Mac's system audio (macOS 14.2+), labels speakers (also when only the mic hears them), saves transcripts as Markdown with optional audio, and writes a summary in the meeting's language. English and 27 more languages.
+- Voice Edit: select text, hold the key and say what to change. Apple Intelligence (macOS 26) or Gemma 4 E2B rewrites it on your Mac.
+- Vocabulary: names and terms that dictation listens for, fixes for words it keeps mishearing, voice commands ("comma", "new paragraph", "scratch that") and filler-word trimming.
+- Speed: text appears 0.22 s after the key is released, against 0.63 s for Wispr Flow and 1.30 s for Superwhisper on the same recordings.
+- Privacy: no telemetry, no account. Purr goes online only to download models (Parakeet is about 450 MB) and, if you allow it, to check GitHub for updates once a day.
+- Updates: each update shows its release notes first, and its signature is checked before it replaces the app.
 - Requirements: macOS 14 (Sonoma) or later on Apple silicon. Intel Macs are not supported.
 - Price: free. Source code: https://github.com/iamarunbrahma/purr
 - Made by Arun Brahma, an independent developer. Contact: contact@arunbrahma.com
 
 ## Pages
 
-- [Home](https://purr.arunbrahma.com/): how it works, FAQ and why it exists
-- [Comparison](https://purr.arunbrahma.com/compare): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources
+- [Home](https://purr.arunbrahma.com/): how it works, a video demo, meetings and Voice Edit, FAQ and why it exists
+- [Comparison](https://purr.arunbrahma.com/compare): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources and measured speed and accuracy
 - [Download](https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg): the latest release (DMG)
 - [Contact](https://purr.arunbrahma.com/contact)
 
