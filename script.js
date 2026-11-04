@@ -32,7 +32,7 @@ document.querySelectorAll(".video-poster[data-yt]").forEach(poster => {
 });
 
 /* -----------------------------------------------------------------
-   Live demo (More than dictation). Mirrors the app's flow: hold
+   Live demo (hero). Mirrors the app's flow: hold
    the key, speak, words type into the focused field; then voice
    commands and Voice Edit. Loops only while in view; leaves the
    static HTML in place under reduced-motion. No dependencies.

@@ -119,11 +119,34 @@
           </a>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="hero-glow"></div>
-          <div class="waveset l"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
-          <img src="assets/purr-icon-168.webp" srcset="assets/purr-icon-168.webp 1x, assets/purr-icon-336.webp 2x" alt="" width="168" height="168" fetchpriority="high">
-          <div class="waveset r"><span class="w1"></span><span class="w2"></span><span class="w3"></span></div>
+        <div class="demo" id="demo" aria-label="Animated demo: dictating into a text field">
+          <div class="demo-stage">
+            <div class="demo-window">
+              <div class="demo-bar" aria-hidden="true">
+                <span class="demo-dot r"></span>
+                <span class="demo-dot y"></span>
+                <span class="demo-dot g"></span>
+                <span class="demo-app">Notes</span>
+              </div>
+              <div class="demo-doc">
+                <p class="demo-text" id="demoText">Let&rsquo;s ship the new onboarding flow this week.</p>
+              </div>
+              <div class="demo-said" id="demoSaid" aria-hidden="true"></div>
+              <div class="demo-hud" id="demoHud" aria-hidden="true">
+                <span class="demo-hud-ic" id="demoHudIc"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Zm6-3a6 6 0 0 1-5 5.91V20h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3.09A6 6 0 0 1 6 11a1 1 0 1 1 2 0 4 4 0 0 0 8 0 1 1 0 1 1 2 0Z"/></svg></span>
+                <span class="demo-hud-lbl" id="demoHudLbl">Listening</span>
+                <span class="demo-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-cap">
+            <span class="demo-key" id="demoKey"><kbd>⌥</kbd></span>
+            <p class="demo-cap-txt">
+              <strong id="demoCapTitle">Dictate</strong>
+              <span id="demoCapSub">Hold the key, speak, release. Your words type in.</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -194,38 +217,34 @@
           Like dictation, they run on your Mac.
         </p>
 
-        <div class="demo" id="demo" aria-label="Animated demo: dictating into a text field">
-          <div class="demo-stage">
-            <div class="demo-window">
-              <div class="demo-bar" aria-hidden="true">
-                <span class="demo-dot r"></span>
-                <span class="demo-dot y"></span>
-                <span class="demo-dot g"></span>
-                <span class="demo-app">Notes</span>
-              </div>
-              <div class="demo-doc">
-                <p class="demo-text" id="demoText">Let&rsquo;s ship the new onboarding flow this week.</p>
-              </div>
-              <div class="demo-said" id="demoSaid" aria-hidden="true"></div>
-              <div class="demo-hud" id="demoHud" aria-hidden="true">
-                <span class="demo-hud-ic" id="demoHudIc"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Zm6-3a6 6 0 0 1-5 5.91V20h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3.09A6 6 0 0 1 6 11a1 1 0 1 1 2 0 4 4 0 0 0 8 0 1 1 0 1 1 2 0Z"/></svg></span>
-                <span class="demo-hud-lbl" id="demoHudLbl">Listening</span>
-                <span class="demo-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="demo-cap">
-            <span class="demo-key" id="demoKey"><kbd>⌥</kbd></span>
-            <p class="demo-cap-txt">
-              <strong id="demoCapTitle">Dictate</strong>
-              <span id="demoCapSub">Hold the key, speak, release. Your words type in.</span>
+        <div class="steps features">
+          <article class="step">
+            <span class="step-num" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg></span>
+            <h3>Meetings</h3>
+            <p>
+              Tap ⌃⌥&nbsp;M to record your mic and your Mac&rsquo;s audio. Purr
+              labels who said what and can write a summary, in English and 27
+              more languages.
             </p>
-          </div>
-
-          <p class="demo-also">
-            Also: names and terms Purr listens for &middot; fixes for words it keeps mishearing &middot; meetings in English and 27 more languages.
-          </p>
+          </article>
+          <article class="step">
+            <span class="step-num" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11 2.5l1.7 4.8 4.8 1.7-4.8 1.7L11 15.5 9.3 10.7 4.5 9l4.8-1.7L11 2.5Zm7.5 9l.95 2.55L22 15l-2.55.95L18.5 18.5l-.95-2.55L15 15l2.55-.95L18.5 11.5Z"/></svg></span>
+            <h3>Voice Edit</h3>
+            <p>
+              Select text, hold ⌃⌥&nbsp;E and say the change, like &ldquo;change
+              this week to Friday&rdquo;. Apple Intelligence or Gemma rewrites
+              it on your Mac.
+            </p>
+          </article>
+          <article class="step">
+            <span class="step-num" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h8"/></svg></span>
+            <h3>Your own words</h3>
+            <p>
+              Add the names and terms Purr should listen for, and fixes for
+              words it keeps mishearing. Say &ldquo;comma&rdquo; or
+              &ldquo;scratch that&rdquo; as you go.
+            </p>
+          </article>
         </div>
       </div>
     </section>
