@@ -807,11 +807,11 @@ code {
   font-size: 13.5px;
   color: var(--ink-faint);
 }
-.legal p, .legal ul {
+.legal p, .legal ul, .legal ol {
   margin: 0 0 14px;
   color: var(--ink-soft);
 }
-.legal ul {
+.legal ul, .legal ol {
   padding-left: 20px;
 }
 .legal li {
@@ -843,6 +843,9 @@ code {
 .compare thead th:first-child { background: var(--accent-soft); }
 .legal .compare a { text-decoration: none; }
 .compare sup { font-size: 11px; }
+/* Two apps fit a phone without scrolling sideways. */
+.compare-two { min-width: 0; }
+.compare-two tbody th { width: 46%; }
 .legal .scroll-hint { display: none; font-size: 14px; margin: 18px 0 -12px; }
 @media (max-width: 820px) { .legal .scroll-hint { display: block; } }
 .legal .sources { font-size: 14px; padding-left: 22px; }

@@ -54,6 +54,19 @@
         "author": { "@id": "https://arunbrahma.com/#organization" },
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "macOS 14 or later, Apple silicon",
+        "softwareVersion": "0.0.2",
+        "fileSize": "11.7 MB",
+        "releaseNotes": "https://github.com/iamarunbrahma/purr/releases/latest",
+        "screenshot": "https://purr.arunbrahma.com/assets/demo-poster-1920.webp",
+        "featureList": [
+          "Hold a key and speak to type into any text field",
+          "Smart Typing: words appear while you speak (English)",
+          "Parakeet for English, WhisperKit for about 100 languages",
+          "Meeting notes from your mic and Mac audio, with speaker labels and summaries, in 28 languages",
+          "Voice Edit: rewrite selected text by saying what to change",
+          "Names and terms to listen for, fixes for misheard words, and voice commands",
+          "Works offline, with no account and no telemetry"
+        ],
         "downloadUrl": "https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg",
         "license": "https://opensource.org/license/mit",
         "isAccessibleForFree": true,
@@ -64,6 +77,108 @@
           "availability": "https://schema.org/InStock",
           "url": "https://purr.arunbrahma.com/"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://purr.arunbrahma.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does my audio leave my Mac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Recording, transcription, summaries and Voice Edit all run on your Mac, and there is no telemetry. Purr only goes online to download models and, if you allow it, to check GitHub for updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How fast is it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "With Parakeet, the default, your words land about 0.2 seconds after you let go of the key. With Smart Typing on, they appear while you’re still talking. Whisper is slower, because it starts only once you let go."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages can I dictate in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "English with Parakeet, the default. For other languages, switch to Whisper in Settings › Engine. It covers about 100 languages and can translate them into English. Pick the one you speak, since auto-detect can misread short clips. Smart Typing is English only, and meetings work in English and 27 more languages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does meeting mode record the other people on my call?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It records your mic and your Mac’s audio together, so the other people on the call are transcribed too. That needs macOS 14.2 or later; on 14.0 and 14.1 only your mic is recorded. When nothing plays through your Mac, like a meeting around one table, Purr tells the voices apart and labels them Speaker 1, Speaker 2 and so on. See meeting notes on your Mac for the rest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I can’t see the icon in the menu bar.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On notched MacBooks the icon hides behind the notch when the menu bar is crowded. Hold Command and drag to reorder, quit a few menu bar apps, or use Ice / Bartender to manage overflow."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How big are the downloads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Parakeet, the default, is about 450 MB and downloads during setup. The rest download only when you turn on what needs them: Smart Typing adds about 220 MB, meetings in other languages about 630 MB, and Gemma 4 E2B, for summaries and Voice Edit, 3.35 GB. Whisper models run from about 140 MB to 950 MB. Settings › Models lists each one and can delete it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work without internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, once the models you use have downloaded. Everything runs on your Mac. Offline dictation on a Mac lists what each feature downloads."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is it different from Wispr Flow, Superwhisper or VoiceInk?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wispr Flow transcribes in the cloud and has apps for Windows, iPhone and Android. Superwhisper and VoiceInk can run locally too, with AI modes and more model choices, but their full versions are paid. Purr is free with no word limit, trial or account, MIT-licensed, and types as you speak. When I played the same recordings into each app, Purr put the text on screen fastest. The side-by-side comparison has those results, the details and sources. Coming from Wispr Flow? Here’s what changes when you switch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I change the hotkey?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Each mode has a few keys to pick from in Settings, like Right Option, F5 or ⌃⌥ Space for dictation, and dictation can also start and stop with a tap. You can’t record a key of your own yet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use it in any app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dictation works in any text field. Voice Edit reads your selection through Accessibility, which most Mac apps support. A few, like some web pages and Electron apps, don’t share it, so Voice Edit can’t see what you selected there."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I update Purr?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The first time Purr starts after setup, it asks whether to check for updates automatically. If you say yes, it checks GitHub once a day. You can also click Check for Updates in the menu bar or in About at any time. You see what changed before anything installs, and Purr checks that each update is signed by its developer before it replaces the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the menu say Permissions Needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A permission Purr needs is off, usually because it was switched off in System Settings. Click Permissions Needed to see which one and turn it back on. Updates keep your permissions."
+            }
+          }
+        ]
       }
     ]
   }
@@ -255,6 +370,7 @@
         <p class="section-eyebrow">FAQ</p>
         <h2 class="section-title">Before you download.</h2>
 
+        <!-- The FAQPage data in <head> repeats these answers. Change both together. -->
         <div class="faq">
           <details>
             <summary>Does my audio leave my Mac?</summary>
@@ -296,7 +412,9 @@
               macOS&nbsp;14.2 or later; on 14.0 and 14.1 only your mic is
               recorded. When nothing plays through your Mac, like a meeting
               around one table, Purr tells the voices apart and labels them
-              Speaker&nbsp;1, Speaker&nbsp;2 and so on.
+              Speaker&nbsp;1, Speaker&nbsp;2 and so on. See
+              <a href="/meeting-notes-mac">meeting notes on your Mac</a> for the
+              rest.
             </p>
           </details>
 
@@ -328,7 +446,8 @@
             <summary>Does it work without internet?</summary>
             <p>
               Yes, once the models you use have downloaded. Everything runs on
-              your Mac.
+              your Mac. <a href="/offline-dictation-mac">Offline dictation on a
+              Mac</a> lists what each feature downloads.
             </p>
           </details>
 
@@ -342,7 +461,9 @@
               account, MIT-licensed, and types as you speak. When I played the
               same recordings into each app, Purr put the text on screen
               fastest. The <a href="/compare.html">side-by-side comparison</a>
-              has those results, the details and sources.
+              has those results, the details and sources. Coming from Wispr
+              Flow? Here&rsquo;s <a href="/wispr-flow-alternative">what changes
+              when you switch</a>.
             </p>
           </details>
 

@@ -19,6 +19,9 @@
 
 - [Home](https://purr.arunbrahma.com/): how it works, a video demo, meetings and Voice Edit, FAQ and why it exists
 - [Comparison](https://purr.arunbrahma.com/compare): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources and measured speed and accuracy
+- [Wispr Flow alternative](https://purr.arunbrahma.com/wispr-flow-alternative): how Purr and Wispr Flow differ, measured speed and accuracy, when Wispr Flow is the better pick, and how to switch
+- [Offline dictation on a Mac](https://purr.arunbrahma.com/offline-dictation-mac): what runs offline, what each feature downloads, and when Purr goes online
+- [Meeting notes on your Mac](https://purr.arunbrahma.com/meeting-notes-mac): how meeting mode records a call without a bot, labels speakers and writes a summary on the Mac
 - [Download](https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg): the latest release (DMG)
 - [Contact](https://purr.arunbrahma.com/contact)
 
