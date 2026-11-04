@@ -612,7 +612,8 @@ code {
   border-radius: var(--radius-card);
   overflow: hidden;
   background: #17110f;
-  box-shadow: var(--shadow-lg);
+  /* A thin cream frame, so the dark video sits on the page. */
+  box-shadow: 0 0 0 8px var(--bg-alt), 0 0 0 9px var(--line), var(--shadow-lg);
 }
 .video-frame img,
 .video-frame iframe {
@@ -661,6 +662,7 @@ code {
 }
 
 @media (max-width: 600px) {
+  .video-frame { box-shadow: 0 0 0 6px var(--bg-alt), 0 0 0 7px var(--line), var(--shadow-lg); }
   .video-play { width: 60px; height: 60px; }
   .video-play svg { width: 32px; height: 32px; }
 }
