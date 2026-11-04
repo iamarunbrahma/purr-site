@@ -204,7 +204,7 @@ code {
   margin: 0 auto 22px;
   max-width: 900px;
 }
-.hero-title .accent { color: var(--accent); }
+.hero-title .accent { display: block; color: var(--accent); text-wrap: balance; }
 
 .hero-sub {
   font-size: clamp(18px, 1.7vw, 21px);
