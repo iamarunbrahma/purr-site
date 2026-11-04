@@ -201,19 +201,10 @@ code {
   line-height: 1.04;
   letter-spacing: -0.015em;
   font-weight: 700;
-  margin: 0 auto 22px;
+  margin: 0 auto 36px;
   max-width: 900px;
 }
 .hero-title .accent { display: block; color: var(--accent); text-wrap: balance; }
-
-.hero-sub {
-  font-size: clamp(18px, 1.7vw, 21px);
-  line-height: 1.5;
-  color: var(--ink-soft);
-  max-width: 640px;
-  margin: 0 auto 36px;
-  text-wrap: balance;
-}
 
 .hero-ctas {
   display: flex;
