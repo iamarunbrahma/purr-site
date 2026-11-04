@@ -21,10 +21,3 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
-
-## Deploy
-
-Netlify deploys `main` to https://purr.arunbrahma.com, and every pull request gets a preview link.
-
-- Files in `assets/` are cached for a year, so give a changed image a new filename.
-- `6271cf5ebad631dc68ee2ceffb3fe3ee.txt` is the IndexNow key. Keep it at the root.
