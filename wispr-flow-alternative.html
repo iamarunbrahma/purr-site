@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBE9E3">
+  <meta name="description" content="Looking for a Wispr Flow alternative that works offline? Purr is free and open source, transcribes on your Mac, and needs no account. Here is how the two differ.">
+
+  <title>A free Wispr Flow alternative for Mac - Purr</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/purr-icon-64.png">
+  <link rel="apple-touch-icon" href="/assets/purr-icon-256.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="canonical" href="https://purr.arunbrahma.com/wispr-flow-alternative">
+  <meta property="og:site_name" content="Purr">
+  <meta property="og:title" content="A free Wispr Flow alternative for Mac">
+  <meta property="og:description" content="Purr is free and open source, transcribes on your Mac, works offline and needs no account. Here is how it differs from Wispr Flow.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://purr.arunbrahma.com/wispr-flow-alternative">
+  <meta property="og:image" content="https://purr.arunbrahma.com/assets/og-card-v2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://purr.arunbrahma.com/assets/og-card-v2.png">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <nav class="nav-pill" aria-label="Primary">
+      <a class="nav-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="40" height="30" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#how">How it works</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+        </svg>
+        Get the app
+      </a>
+    </nav>
+  </header>
+
+  <main class="legal">
+    <article class="container container-narrow">
+      <p class="section-eyebrow">Wispr Flow alternative</p>
+      <h1>A free Wispr Flow alternative that runs on your Mac</h1>
+      <p class="legal-meta">Facts about Wispr Flow come from its own site and docs. Numbers in brackets link to the source.</p>
+
+      <p>Purr does the core thing Wispr Flow does: hold a key, talk, and your words type into
+      whatever app you&rsquo;re using. The difference is where that happens. Wispr Flow sends
+      your audio to the cloud to transcribe it <sup><a href="#w2">[2]</a></sup>. Purr
+      transcribes on your Mac, works offline, and is free and open source, with no account
+      and no word limit.</p>
+
+      <h2>What&rsquo;s different?</h2>
+      <ul>
+        <li><strong>Where your voice goes.</strong> Purr turns speech into text on your Mac
+        and never uploads it. Wispr Flow always transcribes in the cloud <sup><a href="#w2">[2]</a></sup>.</li>
+        <li><strong>Offline.</strong> Purr works without internet once its model has
+        downloaded. Wispr Flow can&rsquo;t start dictation on a Mac that&rsquo;s offline <sup><a href="#w4">[4]</a></sup>.</li>
+        <li><strong>Account.</strong> Purr has none. Wispr Flow asks you to sign in with
+        Apple, Google, Microsoft, SSO or email <sup><a href="#w5">[5]</a></sup>.</li>
+        <li><strong>Price.</strong> Purr is free with no limit. Wispr Flow is free up to
+        2,000 words a week on desktop, and Pro is $15 a month, or $12 a month billed yearly <sup><a href="#w1">[1]</a></sup>.</li>
+        <li><strong>When the text appears.</strong> With Smart Typing on, Purr types while
+        you&rsquo;re still talking. Wispr Flow types after you let go of the key <sup><a href="#w4">[4]</a></sup>.</li>
+        <li><strong>Source code.</strong> Purr is MIT-licensed and on
+        <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>.
+        Wispr Flow&rsquo;s code isn&rsquo;t public.</li>
+      </ul>
+
+      <h2>How do they compare on speed and accuracy?</h2>
+      <p>I played the same recordings into both apps as their microphone, with Wispr Flow
+      on its free plan. Lower is better for latency and word error rate (WER), and higher
+      for names spelled right.</p>
+
+      <div class="compare-scroll">
+        <table class="compare compare-two">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="us">Purr</th>
+              <th scope="col">Wispr Flow</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Latency (key release to text)</th>
+              <td class="us"><strong>0.22 s</strong></td>
+              <td>0.63 s</td>
+            </tr>
+            <tr>
+              <th scope="row">WER, everyday speech</th>
+              <td class="us">3.8%</td>
+              <td><strong>3.4%</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">WER, hard audio (noise, accents, quiet speech)</th>
+              <td class="us"><strong>4.0%</strong></td>
+              <td><strong>4.0%</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">WER, in non-English languages</th>
+              <td class="us">7.1%</td>
+              <td><strong>5.8%</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Names and terms spelled right</th>
+              <td class="us">72.6%</td>
+              <td><strong>93.5%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Purr puts text on screen faster. Wispr Flow makes slightly fewer errors and gets
+      far more names and terms right. The <a href="/compare">full comparison</a> adds
+      Superwhisper and VoiceInk.</p>
+
+      <h2>When is Wispr Flow the better choice?</h2>
+      <p>If you need Windows, an iPhone, Android or an Intel Mac, Wispr Flow runs on all of
+      them and Purr doesn&rsquo;t <sup><a href="#w3">[3]</a></sup>. Its AI also tidies up
+      self-corrections and formats lists for you <sup><a href="#w6">[6]</a></sup>. Purr
+      drops &ldquo;um&rdquo; and &ldquo;uh&rdquo; but otherwise types what you said, unless
+      you ask Voice Edit to change it. And if your dictation is full of names and jargon,
+      Wispr Flow got many more of them right in the test above.</p>
+
+      <h2>How do I switch from Wispr Flow to Purr?</h2>
+      <ol>
+        <li>Download Purr and open it. Setup downloads the Parakeet speech model (about
+        450&nbsp;MB) and asks for Microphone and Accessibility.</li>
+        <li>Click into any text field, hold Right Option, speak and let go. You can pick
+        another key in Settings.</li>
+        <li>Add the names and terms you use in Settings &rsaquo; Vocabulary, along with fixes
+        for any word it keeps mishearing.</li>
+        <li>For languages other than English, switch to Whisper in Settings &rsaquo; Engine.
+        It covers about 100.</li>
+      </ol>
+      <div class="hero-ctas compare-ctas">
+        <a class="btn btn-primary btn-lg" href="https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg" data-track="download_clicked">Download Purr free</a>
+        <a class="btn btn-ghost btn-lg" href="/#how">See how it works</a>
+      </div>
+
+      <h2>Sources</h2>
+      <ol class="sources">
+        <li id="w1"><a href="https://wisprflow.ai/pricing" target="_blank" rel="noopener">Wispr Flow pricing</a></li>
+        <li id="w2"><a href="https://wisprflow.ai/privacy" target="_blank" rel="noopener">Wispr Flow privacy</a></li>
+        <li id="w3"><a href="https://docs.wisprflow.ai/articles/1036674442-supported-devices-and-system-requirements" target="_blank" rel="noopener">Wispr Flow docs: supported devices</a></li>
+        <li id="w4"><a href="https://docs.wisprflow.ai/articles/6409258247-starting-your-first-dictation" target="_blank" rel="noopener">Wispr Flow docs: your first dictation</a></li>
+        <li id="w5"><a href="https://docs.wisprflow.ai/articles/1753832329-login-issues-with-wispr-flow" target="_blank" rel="noopener">Wispr Flow docs: signing in</a></li>
+        <li id="w6"><a href="https://wisprflow.ai" target="_blank" rel="noopener">Wispr Flow website</a></li>
+      </ol>
+      <p>Spotted something out of date? <a href="/contact.html">Tell me</a> and I will fix it.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-brand" href="/">
+        <img src="/assets/purr-glyph-80.webp" width="35" height="26" alt="" aria-hidden="true">
+        <span>purr</span>
+      </a>
+      <p class="footer-line">
+        © <span id="year"></span> Arun Brahma · MIT License ·
+        <a href="https://github.com/iamarunbrahma/purr" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-legal">
+        <a href="/compare.html">Compare</a>
+        <span aria-hidden="true">·</span>
+        <a href="/contact.html">Contact</a>
+        <span aria-hidden="true">·</span>
+        <a href="/privacy.html">Privacy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/terms.html">Terms</a>
+        <span aria-hidden="true">·</span>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+
+  <!-- Cloudflare Web Analytics — privacy-first, cookieless, no consent banner needed.
+       Token for purr.arunbrahma.com. Manage at dash.cloudflare.com → Web Analytics. -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df377985526f415dbb581a27ecad3ad7"}'></script>
+  <script defer src="/analytics.js" data-site="purr"></script>
+</body>
+</html>
