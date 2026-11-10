@@ -5,7 +5,7 @@
 - Hotkeys: hold Right Option to dictate (or tap to start and stop), Control-Option-M for meetings, Control-Option-E for Voice Edit. Each has a few other keys to pick from in Settings.
 - Engines: Parakeet TDT v2 (default, English) and WhisperKit (about 100 languages, auto-detected or pinned, with optional translation to English).
 - Smart Typing: with Parakeet, words appear in the app while you are still talking (English only).
-- Meetings: records your mic and your Mac's system audio (macOS 14.2+), labels speakers (also when only the mic hears them), saves transcripts as Markdown with optional audio, and writes a summary in the meeting's language. English and 27 more languages.
+- Meetings: an AI notetaker with no bot in the call. It records your mic and your Mac's system audio (macOS 14.2+), labels speakers (also when only the mic hears them), saves transcripts as Markdown with optional audio, and, with summaries turned on, writes one in the meeting's language. English and 27 more languages.
 - Voice Edit: select text, hold the key and say what to change. Apple Intelligence (macOS 26) or Gemma 4 E2B rewrites it on your Mac.
 - Vocabulary: names and terms that dictation listens for, fixes for words it keeps mishearing, voice commands ("comma", "new paragraph", "scratch that") and filler-word trimming.
 - Speed: text appears 0.22 s after the key is released, against 0.63 s for Wispr Flow and 1.30 s for Superwhisper on the same recordings.
@@ -21,7 +21,7 @@
 - [Comparison](https://purr.arunbrahma.com/compare): Purr next to Wispr Flow, Superwhisper and VoiceInk, with sources and measured speed and accuracy
 - [Wispr Flow alternative](https://purr.arunbrahma.com/wispr-flow-alternative): how Purr and Wispr Flow differ, measured speed and accuracy, when Wispr Flow is the better pick, and how to switch
 - [Offline dictation on a Mac](https://purr.arunbrahma.com/offline-dictation-mac): what runs offline, what each feature downloads, and when Purr goes online
-- [Meeting notes on your Mac](https://purr.arunbrahma.com/meeting-notes-mac): how meeting mode records a call without a bot, labels speakers and writes a summary on the Mac
+- [Meeting notes on your Mac](https://purr.arunbrahma.com/meeting-notes-mac): how Purr's AI notetaker records a call without a bot, labels speakers and can write a summary on the Mac
 - [Download](https://github.com/iamarunbrahma/purr/releases/latest/download/Purr.dmg): the latest release (DMG)
 - [Contact](https://purr.arunbrahma.com/contact)
 
